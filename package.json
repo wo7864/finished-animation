@@ -1,6 +1,6 @@
 {
   "name": "finished-animation",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "To use the finished animation easily",
   "main": "index.js",
   "scripts": {
