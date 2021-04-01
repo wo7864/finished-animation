@@ -1,3 +1,10 @@
+'use strict';
+
+const core = require('../index');
+const util = require('../util/index');
+
+const FinAnimaCore = core.FinAnimaCore;
+const FinAnima = core.FinAnima;
 
 const followingCursor = (anima) => {
     anima = {
