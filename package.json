@@ -1,0 +1,12 @@
+{
+  "name": "finished-animation",
+  "version": "0.0.9",
+  "description": "To use the finished animation easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
