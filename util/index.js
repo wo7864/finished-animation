@@ -100,7 +100,6 @@ function hover(selector, animation) {
         target.addEventListener('mousemove', (e) => animation.move.play(e));
         target.addEventListener('mouseleave', (e) => animation.leave.play({ e: e }));
     } else {
-        console.log(target);
         target.addEventListener('mouseenter', (e) => animation.play({ e: e }));
         target.addEventListener('mouseleave', (e) => animation.reverse({ e: e }));
     }
