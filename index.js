@@ -1,4 +1,9 @@
 'use strict';
+const common = require('./data/common');
+const text = require('./data/text');
+const image = require('./data/image');
+const button = require('./data/button');
+
 const easingFunction = {
     linear: (x) => {
         return x;
@@ -400,3 +405,7 @@ class FinAnima {
 module.exports = {};
 module.exports.FinAnimaCore = FinAnimaCore;
 module.exports.FinAnima = FinAnima;
+module.exports.commonData = common;
+module.exports.textData = text;
+module.exports.imageData = image;
+module.exports.buttonData = button;
