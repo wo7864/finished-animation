@@ -50,25 +50,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             duration:{
                 required:'false',
                 default:'0.3',
                 detail:'애니메이션 총 진행 시간',
                 example:['0.5'],
+                unit:'s',
+                type:'text/num'
             },
             color:{
                 required:'false',
                 default:'#333',
                 detail:'전환 될 글자 색',
                 example:['#000'],
+                unit:null,
+                type:'color'
             },
             backgroundColor:{
                 required:'false',
                 default:'#fff',
                 detail:'전환 될 배경 색',
                 example:['#f5f5f7'],
+                unit:null,
+                type:'color'
             },
             
         },

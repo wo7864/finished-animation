@@ -55,7 +55,9 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
 
             duration:{
@@ -63,6 +65,8 @@ const data = {
                 default:'0.3',
                 detail:'한 글자가 입력되는데 걸리는 시간',
                 example:['0.1'],
+                unit:'s',
+                type:'text/num'
             },
             
         },
@@ -81,19 +85,25 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1',
                 detail:'한 글자가 불투명해지는데에 걸리는 시간',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
         },
         description:'한 글자씩 투명도 없애고 뚜렷하게 보여지는 애니메이션',
@@ -111,25 +121,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'0.3',
                 detail:'애니메이션 전체가 진행되는데에 걸리는 시간',
                 example:['0.1'],
+                unit:'s',
+                type:'text/num'
             },
             bright:{
                 required:'false',
                 default:'0.3',
                 detail:'불빛이 퍼지는 정도. 10~20정도가 적정선이다.',
                 example:['0.1'],
+                unit:null,
+                type:'text/num'
             },
             
         },
@@ -148,31 +166,41 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutSine',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'0.3',
                 detail:'애니메이션 전체가 진행되는데에 걸리는 시간',
                 example:['0.1'],
+                unit:'s',
+                type:'text/num'
             },
             blur:{
                 required:'false',
                 default:'60',
                 detail:'초기 텍스트의 blur 값',
                 example:['50'],
+                unit:null,
+                type:'text/num'
             },
             maxLetterSpacing:{
                 required:'false',
                 default:'30',
                 detail:'초기 텍스트의 자간',
                 example:['35'],
+                unit:null,
+                type:'text/num'
             },
             
         },
@@ -191,31 +219,41 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1',
                 detail:'한 글자가 올라갔다가 내려오는데에 걸리는 시간',
                 example:['0.9'],
+                unit:'s',
+                type:'text/num'
             },
             timing:{
                 required:'false',
                 default:'-0.8',
                 detail:'한 글자의 애니메이션 시작 시기. -0.8은 원래 시작 할 시기 보다 0.8초 앞당긴다는 의미를 가진다.',
                 example:['-0.9'],
+                unit:'s',
+                type:'text/num'
             },
             height:{
                 required:'false',
                 default:'50',
                 detail:'각 글자가 뛰는 최대 높이',
                 example:['35'],
+                unit:null,
+                type:'text/num'
             },
             
         },
@@ -234,25 +272,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'0.5',
                 detail:'한 글자가 나타나는데에 걸리는 시간',
                 example:['0.5'],
+                unit:'s',
+                type:'text/num'
             },
             timing:{
                 required:'false',
                 default:'-0.4',
                 detail:'한 글자의 애니메이션 시작 시기. -0.8은 원래 시작 할 시기 보다 0.8초 앞당긴다는 의미를 가진다.',
                 example:['-0.4'],
+                unit:'s',
+                type:'text/num'
             },
             
         },
@@ -271,31 +317,41 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1.5',
                 detail:'애니메이션 총 진행시간',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
             backgroundColor:{
                 required:'false',
                 default:'#fff',
                 detail:'한 글자가 나타나는데에 걸리는 시간',
                 example:['#333', 'rgb(33, 33, 33)'],
+                unit:null,
+                type:'color'
             },
             color:{
                 required:'false',
                 default:'#333',
                 detail:'한 글자가 나타나는데에 걸리는 시간',
                 example:['#fff', 'rgb(255, 255, 255)'],
+                unit:null,
+                type:'color'
             }
         },
         description:'텍스트의 색, 배경색을 슬라이드로 전환하는 애니메이션.',
@@ -313,25 +369,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1.5',
                 detail:'애니메이션 총 진행시간',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
             timing:{
                 required:'false',
                 default:'-0.4',
                 detail:'한 글자의 애니메이션 시작 시기. -0.8은 원래 시작 할 시기 보다 0.8초 앞당긴다는 의미를 가진다.',
                 example:['-0.4'],
+                unit:'s',
+                type:'text/num'
             },
         },
         description:'한 글자 씩 돌면서 나타나는 애니메이션',
@@ -349,19 +413,25 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1.5',
                 detail:'애니메이션 총 진행시간',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
         },
         description:'글자의 외곽선만 남긴 후, 슬라이드로 채우는 애니메이션',
@@ -379,25 +449,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1.5',
                 detail:'한 글자가 사라지거나 나타나는데 걸리는 시간.',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
             afterText:{
                 required:'true',
                 default:'null',
                 detail:'대체될 새로운 텍스트',
                 example:['짱구와 철수도 친구입니다.'],
+                unit:null,
+                type:'text'
             },
         },
         description:'기존의 텍스트가 fade-out하고, 새로운 텍스트가 fade-in하는 애니메이션',
@@ -416,25 +494,33 @@ const data = {
                 required:'true',
                 default:'null',
                 detail:'지정하고자 하는 속성의 선택자',
-                example:['.text']
+                example:['.text'],
+                unit:null,
+                type:'text'
             },
             easingFunction:{
                 required:'false',
                 default:'easeOutQuart',
                 detail:'애니메이션 재생 시 가속 함수',
                 example:['easeOutQuart'],
+                unit:null,
+                type:'select/ease'
             },
             duration:{
                 required:'false',
                 default:'1.5',
                 detail:'한 글자가 사라지거나 나타나는데 걸리는 시간.',
                 example:['1.5'],
+                unit:'s',
+                type:'text/num'
             },
             afterText:{
                 required:'true',
                 default:'null',
                 detail:'대체될 새로운 텍스트',
                 example:['짱구와 철수도 친구입니다.'],
+                unit:null,
+                type:'text'
             },
         },
         description:'기존의 텍스트가 상단으로 올라가고, 새로운 텍스트가 하단에서 올라오는 애니메이션',
