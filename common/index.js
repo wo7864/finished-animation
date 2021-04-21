@@ -286,8 +286,41 @@ const imageCursor = (anima) => {
     }
 }
 
+const stickyfadeInOut = (anima) => {
+    anima = {
+        appear:'bottom/top',
+        ...anima,
+    }
+    if (!anima.target) { console.error('target is undefined'); return; }
+    const target = document.querySelector(anima.target);
+    target.style.position = 'fixed'
+    target.style.opacity = 0
 
+    const finAnimaCore = new FinAnimaCore();
+    const inAnima = new FinAnima({
+        func: (progress) => {
+            target.opacity = progress;
+        },
+        duration: 0.1,
+        easingFunction: 'easeInSine',
+        repeat:true,
+    })
+    finAnimaCore.addFinAnima(inAnima)
+
+    const outAnima = new FinAnima({
+        func: (progress) => {
+            target.opacity = 1 - progress;
+        },
+        duration: 0.1,
+        timing:0.8,
+        easingFunction: 'easeInSine',
+        repeat:true,
+    })
+    finAnimaCore.addFinAnima(outAnima)
+
+}
 module.exports = {};
 module.exports.followingCursor = followingCursor;
 module.exports.circleCursor = circleCursor;
 module.exports.imageCursor = imageCursor;
+module.exports.stickyfadeInOut = stickyfadeInOut;
