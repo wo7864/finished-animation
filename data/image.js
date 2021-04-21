@@ -2,6 +2,7 @@
 const data = {
     slide1:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -31,6 +32,7 @@ const data = {
     },
     slide2:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -59,6 +61,7 @@ const data = {
     },
     slide3:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -87,6 +90,7 @@ const data = {
     },
     rotate1:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -115,6 +119,7 @@ const data = {
     },
     throw1:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -144,6 +149,7 @@ const data = {
 
     ghost1:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -188,6 +194,7 @@ const data = {
     },
     ghost2:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -232,6 +239,7 @@ const data = {
     },
     chewing:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,

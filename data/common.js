@@ -46,6 +46,7 @@
 const data = {
     imageCursor:{
         event:{
+            view:0,
             scroll:0,
             hover:2,
             click:0,

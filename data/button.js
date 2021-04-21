@@ -41,7 +41,8 @@ const data = {
     */
     circleOverlay1:{
         event:{
-            scroll:0,
+            view:1,
+            scroll:1,
             hover:2,
             click:0,
         },

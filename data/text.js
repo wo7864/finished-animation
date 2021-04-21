@@ -46,6 +46,7 @@
 const data = {
     typing:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -76,6 +77,7 @@ const data = {
 
     typing2:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -112,6 +114,7 @@ const data = {
 
     neonText:{
         event:{
+            view:2,
             scroll:2,
             hover:2,
             click:2,
@@ -157,9 +160,10 @@ const data = {
 
     cloudy:{
         event:{
+            view:2,
             scroll:2,
-            hover:1,
-            click:1,
+            hover:0,
+            click:0,
         },
         params:{
             target:{
@@ -210,7 +214,8 @@ const data = {
 
     jump:{
         event:{
-            scroll:2,
+            view:2,
+            scroll:1,
             hover:2,
             click:2,
         },
@@ -263,6 +268,7 @@ const data = {
     
     appearFromBottom:{
         event:{
+            view:2,
             scroll:2,
             hover:0,
             click:0,
@@ -308,6 +314,7 @@ const data = {
 
     backColorCover:{
         event:{
+            view:2,
             scroll:2,
             hover:2,
             click:2,
@@ -360,9 +367,10 @@ const data = {
 
     appearRotate:{
         event:{
-            scroll:2,
-            hover:0,
-            click:0,
+            view:2,
+            scroll:1,
+            hover:1,
+            click:1,
         },
         params:{
             target:{
@@ -404,6 +412,7 @@ const data = {
 
     fillText:{
         event:{
+            view:2,
             scroll:2,
             hover:2,
             click:2,
@@ -440,6 +449,7 @@ const data = {
 
     converText:{
         event:{
+            view:2,
             scroll:2,
             hover:2,
             click:2,
@@ -485,6 +495,7 @@ const data = {
     
     converText2:{
         event:{
+            view:2,
             scroll:2,
             hover:2,
             click:2,
