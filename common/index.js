@@ -288,7 +288,6 @@ const imageCursor = (anima) => {
 
 const stickyfadeInOut = (anima) => {
     anima = {
-        appear:'bottom/top',
         ...anima,
     }
     if (!anima.target) { console.error('target is undefined'); return; }
@@ -319,8 +318,47 @@ const stickyfadeInOut = (anima) => {
     finAnimaCore.addFinAnima(outAnima)
 
 }
+
+const stickyScaleUp = (anima) => {
+    anima = {
+        ...anima,
+    }
+    if (!anima.target) { console.error('target is undefined'); return; }
+    const target = document.querySelector(anima.target);
+    target.style.position = 'sticky'
+    target.style.opacity = 0
+    target.style.transform = `scale(0)`;
+
+    const finAnimaCore = new FinAnimaCore();
+    const inAnima = new FinAnima({
+        func: (progress) => {
+            target.style.opacity = progress;
+            target.style.transform = `scale(${progress})`;
+        },
+        duration: 0.1,
+        easingFunction: 'easeInSine',
+        repeat:true,
+    })
+    finAnimaCore.addFinAnima(inAnima)
+
+    const outAnima = new FinAnima({
+        func: (progress) => {
+            target.style.opacity = 1 - progress;
+            target.style.transform = `translateY(${-(progress*100)}%)`;
+        },
+        duration: 0.1,
+        timing:0.8,
+        easingFunction: 'easeInSine',
+        repeat:true,
+    })
+    finAnimaCore.addFinAnima(outAnima)
+
+    return finAnimaCore
+}
+
 module.exports = {};
 module.exports.followingCursor = followingCursor;
 module.exports.circleCursor = circleCursor;
 module.exports.imageCursor = imageCursor;
 module.exports.stickyfadeInOut = stickyfadeInOut;
+module.exports.stickyScaleUp = stickyScaleUp;

@@ -1,5 +1,13 @@
+'use strict';
+
+const core = require('../index');
+
+const FinAnimaCore = core.FinAnimaCore;
+const FinAnima = core.FinAnima;
+
 const playCanvasVideo = (anima) => {
     anima = {
+        appear:'bottom/top',
         ...anima,
     }
     if (!anima.target) { console.error('target is undefined'); return; }
@@ -38,3 +46,6 @@ const playCanvasVideo = (anima) => {
     return finAnimaCore
     
 }
+
+module.exports = {};
+module.exports.playCanvasVideo = playCanvasVideo;

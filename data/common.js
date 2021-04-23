@@ -97,6 +97,47 @@ const data = {
         codepenKey:'yLgXgKd',
     },
 
+    stickyFadeInOut:{
+        event:{
+            view:0,
+            scroll:2,
+            hover:0,
+            click:0,
+        },
+        params:{
+            target:{
+                required:'true',
+                default:'null',
+                detail:'지정하고자 하는 속성의 선택자',
+                example:['.button'],
+                unit:null,
+                type:'text'
+            },
+        },
+        description:'스크롤을 내리면, 대상이 Fade In되어 나타나고, FadeOut 되어 사라지는 애니메이션',
+        codepenKey:'yLgXgKd',
+    },
+
+    stickyScaleUp:{
+        event:{
+            view:0,
+            scroll:2,
+            hover:0,
+            click:0,
+        },
+        params:{
+            target:{
+                required:'true',
+                default:'null',
+                detail:'지정하고자 하는 속성의 선택자',
+                example:['.button'],
+                unit:null,
+                type:'text'
+            },
+        },
+        description:'스크롤을 내리면, 대상이 ScaleUp 되어 나타나며, FadeOut 되어 사라지는 애니메이션.',
+        codepenKey:'yLgXgKd',
+    },
 }
 
 module.exports = {...data};
