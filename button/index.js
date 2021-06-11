@@ -95,7 +95,7 @@ const circleOverlay1 = (anima) => {
     /******play*******/
     const finAnimaCore = new FinAnimaCore();
     const finAnima1 = new FinAnima({
-        initFunc: () => {targetText.style.color = originColor;},
+        before: () => {targetText.style.color = originColor;},
         func: (progress) => {
             
             const opacity = util.linearFromTo(progress, 1, -1);
@@ -114,7 +114,7 @@ const circleOverlay1 = (anima) => {
         easingFunction: anima.easingFunction,
     })
     const finAnima3 = new FinAnima({
-        initFunc: () => {targetText.style.color = anima.color;},
+        before: () => {targetText.style.color = anima.color;},
         func: (progress) => {
             const y = util.linearFromTo(progress, 100, 0);
             targetText.style.opacity = progress;

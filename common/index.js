@@ -131,7 +131,7 @@ const circleCursor = (anima) => {
     const enterAnimaCore = new FinAnimaCore();
     enterAnimaCore.setRepeat(true);
     const enterAnima = new FinAnima({
-        initFunc: (e) => {
+        before: (e) => {
             console.log(e);
             Attribute.translate();
             Attribute.x = e.offsetX - circle.offsetLeft - (anima.circleSize /2);
@@ -158,7 +158,7 @@ const circleCursor = (anima) => {
     leaveAnimaCore.setRepeat(true);
 
     const leaveAnima = new FinAnima({
-        initFunc: (e) => {
+        before: (e) => {
             Attribute.offTranslate();
         },
         func: (progress) => {
@@ -238,7 +238,7 @@ const imageCursor = (anima) => {
     enterAnimaCore.setRepeat(true);
 
     const enterAnima = new FinAnima({
-        initFunc: (e) => {
+        before: (e) => {
             Attribute.translate();
             Attribute.x = e.offsetX - image.offsetLeft - (anima.imageWidth/2);
             Attribute.y = e.offsetY - image.offsetTop - (anima.imageHeight /2);
@@ -265,7 +265,7 @@ const imageCursor = (anima) => {
     leaveAnimaCore.setRepeat(true);
 
     const leaveAnima = new FinAnima({
-        initFunc: (e) => {
+        before: (e) => {
             Attribute.offTranslate();
         },
         func: (progress) => {

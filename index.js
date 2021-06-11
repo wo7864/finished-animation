@@ -280,15 +280,16 @@ class FinAnima {
         this.easingFunction = easingFunction[props.easingFunction] || easingFunction.linear;
 
         this.firstFrame = 0;
-        this.lastFrame = 0;
+        this.lastFrame = this.frameSize;
 
         this.startFrame = 0;
         this.currentFrame = 0;
 
         // -1: 되감기, 0: 정지, 1 재생
         this.state = 0;
-        this.initFunc = props.initFunc;
+        this.before = props.before;
         this.func = props.func;
+        this.after = props.after;
         this.animationRef = null;
 
         //this.play();
@@ -332,12 +333,12 @@ class FinAnima {
         this.func(this.easingFunction(progress));
     }
 
-    play(startFrame, params) {
+    play(startFrame=0, params) {
 
         if (this.state === -1) {
             this.stop();
         }
-        if (this.initFunc) this.initFunc(params.e);
+        if (this.before) this.before(params.e);
         let start;
         const step = (timestamp) => {
 
@@ -345,6 +346,7 @@ class FinAnima {
                 start = timestamp;
                 this.state = 1
             };
+
 
             timestamp += startFrame;
             const frame = timestamp - start;
@@ -357,6 +359,7 @@ class FinAnima {
             else {
                 this.func(1);
                 this.stop();
+                if(this.after) this.after();
             }
 
         }
@@ -373,7 +376,7 @@ class FinAnima {
         if (this.state === 1) {
             this.stop();
         }
-        if (this.initFunc) this.initFunc(params.e);
+        if (this.before) this.before(params.e);
         let start;
         const step = (timestamp) => {
 
@@ -409,3 +412,4 @@ module.exports.commonData = common;
 module.exports.textData = text;
 module.exports.imageData = image;
 module.exports.buttonData = button;
+module.exports.easing = easingFunction;
