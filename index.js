@@ -338,7 +338,7 @@ class FinAnima {
         if (this.state === -1) {
             this.stop();
         }
-        if (this.before) this.before(params.e);
+        if (this.before) this.before();
         let start;
         const step = (timestamp) => {
 
@@ -376,7 +376,7 @@ class FinAnima {
         if (this.state === 1) {
             this.stop();
         }
-        if (this.before) this.before(params.e);
+        if (this.before) this.before();
         let start;
         const step = (timestamp) => {
 
