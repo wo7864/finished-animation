@@ -1,4 +1,4 @@
-# Finished Animation
+# Finished Animation ![img](https://img.shields.io/badge/version-v0.0.34-brightgreen)
 
 Finished Animation 은 미리 완성된 애니메이션을 호출하여, 필요한 상황에 빠르게 적용 할 수 있는 라이브러리입니다.
 
